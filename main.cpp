@@ -63,7 +63,7 @@ private:
     QString dangerColor  = "#DC3545"; // Red
     QString warningColor = "#FFC107"; // Orange
 
-    // --- STYLESHEET (Fixed Ghost Buttons) ---
+    // --- STYLESHEET ---
     QString appStyle =
         "QWidget { font-family: 'Segoe UI', sans-serif; font-size: 14px; }"
         "QWidget#CentralWidget { background-color: #F0F4F8; }"
@@ -77,15 +77,12 @@ private:
         "QHeaderView::section { background-color: #E8E8E8; color: #333333; padding: 6px; border: none; font-weight: bold; }"
         "QTableWidget::item:selected { background-color: #0066CC; color: white; }"
 
-        // Popups (Message Box / Input Dialog)
         "QDialog, QMessageBox, QInputDialog { background-color: white; color: #333333; }"
         "QDialog QLabel { color: #333333; font-weight: bold; }"
 
-        // *** CRITICAL FIX: Force Background Color on Standard Popup Buttons ***
         "QDialog QPushButton { background-color: #0066CC; color: white; padding: 6px 15px; border-radius: 4px; min-width: 60px; }"
         "QDialog QPushButton:hover { background-color: #0055AA; }"
 
-        // Main App Buttons (Base Style)
         "QPushButton { color: white; font-weight: bold; padding: 8px 16px; border-radius: 4px; border: none; }"
         "QPushButton:hover { margin-top: -1px; margin-bottom: 1px; }";
 
@@ -480,3 +477,4 @@ int main(int argc, char *argv[]) {
     w.show();
     return a.exec();
 }
+
